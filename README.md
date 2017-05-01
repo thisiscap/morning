@@ -50,4 +50,4 @@ For example:
 **Then to add optional queries add `?` after URL**
 
 For example:
-`?exclude=alerts,flags/units=uk2`
+`?exclude=alerts,flags&units=uk2`
