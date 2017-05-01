@@ -25,7 +25,7 @@ main {
 
 aside {
   a {
-    // Default link styles
+    // Link styles
     color: $paleGrey;
     text-decoration: none;
     transition: color ease 1s;
@@ -33,11 +33,11 @@ aside {
       color: $paleGrey;
     }
     &:hover {
-      color: $liveTextColour;
+      color: black;
     }
     &:active {
-      color: $liveTextColour;
-      border-bottom: 2px solid $liveTextColour;
+      color: black;
+      border-bottom: 2px solid $paleGrey;
     }
   }
 }
