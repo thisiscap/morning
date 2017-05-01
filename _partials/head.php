@@ -21,7 +21,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png">
 
 <!-- Some Android stuff so I can save the site to my phone -->
-<meta name="theme-color" content="#change-me">
+<meta name="theme-color" content="#FF6347">
 <link rel="manifest" href="/assets/manifest.json">
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="icon" sizes="192x192" href="/assets/highres-icon.png">
