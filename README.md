@@ -10,7 +10,7 @@ It will tell me the following:
 - ~~A different word each day to describe the day?~~
 - ~~What day of the week it is~~
 - ~~The temperature outside (degrees celsius)~~
-- What the weather will be in 1 hour ahead of the current time
+- ~~What the weather will be in 1 hour ahead of the current time~~
 - ~~What direction and speed (mph) the wind is~~
 - A different joke each day
 
@@ -22,8 +22,8 @@ Hey Chris, mellow Monday. It's 10° outside & in an hour it will be raining. The
 
 **Design thoughts**
 
-- Purely typographic, nice big responsive type
-- Try not to use webfonts?
+- ~~Purely typographic, nice big responsive type~~
+- ~~Try not to use webfonts?~~
 - Background and text colour change slightly to reflect the time of day?
 
 **Things to make**
