@@ -5,7 +5,7 @@
 	// Define the following variables:
 	$latitude = "50.822530"; // Brighton, UK
 	$longitude = "-0.137163";
-	$excludeList = "alerts,flags"; // Comma separated list, no spaces
+	$excludeList = "hourly,daily,alerts,flags"; // Comma separated list, no spaces
 	$units = "uk2"; // Outputs units as mph, degrees celsius, etc
 
 	// Use above variables to build the url
