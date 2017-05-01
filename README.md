@@ -28,12 +28,14 @@ Hey Chris, mellow Monday. It's 10° outside & in an hour it will be raining. The
 
 **Things to make**
 
-- [ ] Favicon (.ico)
+- [x] Favicon (.ico)
 - [x] Manifest (.json)
-- [ ] Icon @ 16, 32, 96px (.png)
-- [ ] App icon @ 192px (.png)
+- [x] Icon @ 16, 32, 96px (.png)
+- [x] App icon @ 192px (.png)
 
 **Notes**
+
+[Invaluable guide about JSON and PHP](https://www.taniarascia.com/how-to-use-json-data-with-php-or-javascript/)
 
 **Building the Dark Sky API url**
 
