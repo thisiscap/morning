@@ -9,7 +9,7 @@
 	$units = "uk2"; // Outputs units as mph, degrees celsius, etc
 
 	// Use above variables to build the url
-	$url = "https://api.darksky.net/forecast/$darkSkyApiKey/$latitude,$longitude?exclude=$excludeList/units=$units";
+	$url = "https://api.darksky.net/forecast/$darkSkyApiKey/$latitude,$longitude?exclude=$excludeList&units=$units";
 
 	$data = file_get_contents($url); // Put the contents of the file into a variable
 	$weather = json_decode($data, true); // Decode the JSON feed
