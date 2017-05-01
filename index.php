@@ -29,7 +29,11 @@
       <span id="happySynonym"><!-- Word output with JS --></span>
       <span><?php echo(jddayofweek($currentDate,1)); ?></span>.
 
-      It's <span><?php echo round($weather['currently']['temperature']) ?>&deg;</span> outside &amp; in an hour it will be raining.
+      It's
+      <span><?php echo round($weather['currently']['apparentTemperature']) ?>&deg;</span>
+      outside &amp;
+
+      there will be <span><?php echo strtolower($weather['minutely']['summary']) ?></span>
 
       There is a <span><?php echo round($weather['currently']['windSpeed']) ?>mph</span> wind coming from the
 
