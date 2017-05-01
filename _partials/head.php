@@ -10,7 +10,7 @@
 <meta name="robots" content="noindex">
 
 <!-- Link to CSS -->
-<link rel="stylesheet" href="/assets/morning-update.css">
+<link rel="stylesheet" href="/assets/css/morning-update.css">
 
 <!-- Favicons -->
 <!-- For IE 10 and below -->
