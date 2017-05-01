@@ -3,8 +3,8 @@
 # Exclude files with private API keys so not on public repo
 # Leave example files that can be used to get setup
 # ------------------------------------------------------------
-/_api-keys/*
-!/_api-keys/example.php
+/_partials/api-keys.php
+!/_api-keys/example.api-keys.php
 
 # Created by https://www.gitignore.io/api/sass,node,grunt
 
