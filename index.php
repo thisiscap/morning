@@ -5,9 +5,6 @@
   $pageTitle = "Today, a daily update";
   $pageDescription = "A simple webpage that updates me on somethings I like to know each day.";
   $userName = "Chris";
-
-  // Use php to find the current date
-  $currentDate = cal_to_jd(CAL_GREGORIAN,date("m"),date("d"),date("Y"));
 ?>
 
 <html>
@@ -27,7 +24,7 @@
       Hey
       <span><?php echo $userName ?></span>,
       <span id="happySynonym"><!-- Word output with JS --></span>
-      <span><?php echo(jddayofweek($currentDate,1)); ?></span>.
+      <span><?php echo date("l"); ?></span>.
 
       It's
       <span><?php echo round($weather['currently']['apparentTemperature']) ?>&deg;</span>
@@ -36,10 +33,9 @@
       there will be <span><?php echo strtolower($weather['minutely']['summary']) ?></span>
 
       There is a <span><?php echo round($weather['currently']['windSpeed']) ?>mph</span> wind coming from the
-
       <span>
       <?php
-        // Found this to echo into a variable (echo value is nummeral degree, i.e 123)
+        // Found this snippet to echo into a variable (echo value is nummeral degree, i.e 123)
         ob_start();
         echo $weather['currently']['windBearing'];
         $windBearing = ob_get_contents();
@@ -56,6 +52,22 @@
         else { echo "North West."; }
       ?>
       </span>
+
+      <?php
+        // Check the date, if a weekday then check the time, display different results
+        $currentTime = date("H");
+        $currentWeekday = date("l");
+
+        ob_start();
+        echo $weather['currently']['windSpeed'];
+        $windSpeed = ob_get_contents();
+        ob_end_clean();
+
+        // Nice message during the weekend
+        if (($currentWeekday == "Saturday" ) || ($currentWeekday == "Sunday")) {} //Do nothing
+        // If it is a weekday, then check time, wind speed and direction for headwinds
+        if (($currentTime <= "11") && ($windSpeed >= "6") && ($windBearing >= "225")) { echo "You'll have a headwind going to work today."; }
+      ?>
 
     </main>
 
