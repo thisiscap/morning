@@ -1,1 +1,43 @@
 // Global styles
+
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 4vmin;
+  // Use flex to keep the aside at the bottom of the page
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  // Occupy space with flex
+  flex: 1;
+  font-size: 8vmin;
+  span {
+    // Give live info unique styles
+    color: $liveTextColour;
+  }
+}
+
+aside {
+  a {
+    // Default link styles
+    color: $paleGrey;
+    text-decoration: none;
+    transition: color ease 1s;
+    &:visited {
+      color: $paleGrey;
+    }
+    &:hover {
+      color: $liveTextColour;
+    }
+    &:active {
+      color: $liveTextColour;
+      border-bottom: 2px solid $liveTextColour;
+    }
+  }
+}

@@ -1,1 +1,18 @@
 // Define typographic defaults
+
+body {
+  // System default font stack for body
+  font-family: -apple-system,
+               BlinkMacSystemFont,
+               "Segoe UI",
+               Roboto,
+               Helvetica,
+               Arial,
+               sans-serif;
+  // Nicer font rendering
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  // Setting global defaults
+  line-height: 1.2;
+  color: $textColour;
+}
