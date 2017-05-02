@@ -7,7 +7,7 @@
   $userName = "Chris";
 ?>
 
-<html>
+<html lang="en">
 
   <head>
     <!-- Pull in the head, info populated from the PHP variables above -->
