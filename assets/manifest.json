@@ -2,7 +2,7 @@
   "name": "Today, a daily update",
   "description": "Updates me on somethings I like to know each day.",
   "icons": [{
-    "src": "/assets/icon.png",
+    "src": "/assets/highres-icon.png",
     "sizes": "192x192"
   }]
 }
