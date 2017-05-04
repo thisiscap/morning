@@ -1,3 +1,10 @@
+<!-- Make everybody go SSL -->
+<script type="text/javascript">
+  var host = "morning.christopherporter.co.uk";
+  if ((host == window.location.host) && (window.location.protocol != "https:"))
+      window.location.protocol = "https";
+</script>
+
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
