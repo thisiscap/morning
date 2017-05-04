@@ -14,6 +14,10 @@
     <?php include('_partials/head.php'); ?>
   </head>
 
+  <!--
+    Hello. If you'd like to look at it, this project can be found on Github at https://github.com/thisiscap/morning-update
+  -->
+
   <body>
     <!-- Pull in Dark Sky API code for weather output -->
     <?php include('_partials/dark-sky-api.php') ?>
