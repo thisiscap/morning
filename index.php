@@ -68,8 +68,9 @@
         ob_end_clean();
 
         // If it is a weekday, then check time, wind speed and direction for headwinds
-        if (($currentTime <= "11") && ($windSpeed >= "6") && ($windBearing >= "225")) { echo "You'll have a headwind going to work today."; }
+        if (($currentTime <= "11") && ($windSpeed >= "6") && ($windBearing >= "225")) { echo "You'll <span>have a headwind going to work today</span>."; }
       ?>
+
 
     </main>
 
