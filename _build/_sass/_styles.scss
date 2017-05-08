@@ -7,15 +7,9 @@ html * {
 body {
   margin: 0;
   padding: 4vmin;
-  // Use flex to keep the aside at the bottom of the page
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
 }
 
 main {
-  // Occupy space with flex
-  flex: 1;
   font-size: 10vmin;
   span {
     // Give live info unique styles
@@ -24,6 +18,7 @@ main {
 }
 
 aside {
+  margin-top: 3rem;
   a {
     // Link styles
     color: $paleGrey;
@@ -39,5 +34,24 @@ aside {
       color: black;
       border-bottom: 2px solid $paleGrey;
     }
+  }
+}
+
+// If browser supports flex
+
+@supports(display:flex) {
+  body {
+    display: flex;
+    // Min height keeps aside to bottom of viewport
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+  }
+
+	aside {
+    margin-top: 0;
   }
 }
