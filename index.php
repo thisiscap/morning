@@ -67,8 +67,6 @@
         $windSpeed = ob_get_contents();
         ob_end_clean();
 
-        // Nice message during the weekend
-        if (($currentWeekday == "Saturday" ) || ($currentWeekday == "Sunday")) {} //Do nothing
         // If it is a weekday, then check time, wind speed and direction for headwinds
         if (($currentTime <= "11") && ($windSpeed >= "6") && ($windBearing >= "225")) { echo "You'll have a headwind going to work today."; }
       ?>
