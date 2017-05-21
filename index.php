@@ -30,7 +30,7 @@
       <span id="happySynonym"><!-- Word output with JS --></span>
       <span><?php echo date("l"); ?></span>.
 
-      It&apos;s
+      It&rsquo;s
       <span><?php echo round($weather['currently']['apparentTemperature']) ?>&deg;</span>
       outside &amp;
 
